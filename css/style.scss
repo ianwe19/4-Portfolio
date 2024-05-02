@@ -1,14 +1,31 @@
 @import 'variables';
 @import 'mixins';
 
+* {
+    box-sizing: border-box;
+    border-style: none;
+}
+
+body {
+    background-color: black;
+}
 
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2vw;
     align-items: center;
     position: fixed;
+    top: 3vw;
+    font-size: 3vw;
+
+    svg {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
 
     .header-left {
         margin-left: 2vw;
@@ -20,5 +37,27 @@ header {
 
     .header-right {
         margin-right: 2vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+section {
+    display: grid;
+    width: 100%;
+    grid-column: 1, 1;
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        @include flex-center;
+        color: #eeeeee;
+        font-size: 3.5vw;
+        padding: 10vw;
     }
 }
