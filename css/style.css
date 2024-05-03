@@ -1,1 +1,54 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  border-style: none;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2vw;
+  align-items: center;
+  position: fixed;
+  top: 3vw;
+  font-size: 3vw;
+}
+header .header-left {
+  margin-left: 2vw;
+}
+header .header-center {
+  justify-content: center;
+}
+header .header-right {
+  margin-right: 2vw;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a svg {
+  width: 3vw;
+  height: auto;
+}
+
+section {
+  display: grid;
+  width: 100%;
+  grid-column: 1, 1;
+}
+section img {
+  width: 100%;
+}
+section h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eeeeee;
+  font-size: 3.5vw;
+  padding: 10vw;
+}/*# sourceMappingURL=style.css.map */
