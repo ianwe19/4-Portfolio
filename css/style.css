@@ -57,14 +57,14 @@ section h1 {
   font-size: 3.5vw;
   padding: 10vw;
 }
-section .text-over {
+section figure {
   position: relative;
   margin: 0;
 }
-section .text-over img {
+section figure img {
   display: block;
 }
-section .text-over figcaption {
+section figure figcaption {
   position: absolute;
   bottom: 0;
   right: 0;
