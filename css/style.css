@@ -8,7 +8,22 @@ body {
   margin: 0;
 }
 
-header {
+.header-wrapper {
+  position: fixed;
+  display: span;
+  height: 6vw;
+  width: 100%;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+@media only screen and (min-width: 720px) {
+  .header-wrapper {
+    height: 3.5vw;
+  }
+}
+.header-wrapper header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,29 +31,37 @@ header {
   gap: 2vw;
   align-items: center;
   position: fixed;
-  top: 3vw;
-  font-size: 3vw;
+  top: 2vw;
+  font-size: 2.5vw;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
 }
-header .header-left {
+@media only screen and (min-width: 720px) {
+  .header-wrapper header {
+    font-size: 1.5vw;
+    top: 1vw;
+  }
+}
+.header-wrapper header .header-left {
   margin-left: 2vw;
 }
-header .header-center {
+.header-wrapper header .header-center {
   justify-content: center;
 }
-header .header-right {
+.header-wrapper header .header-right {
   margin-right: 2vw;
 }
-header a {
+.header-wrapper header a {
   text-decoration: none;
   color: black;
 }
-header a svg {
-  width: 3vw;
+.header-wrapper header a svg {
+  width: 2.5vw;
   height: auto;
+}
+@media only screen and (min-width: 720px) {
+  .header-wrapper header a svg {
+    width: 2vw;
+  }
 }
 
 section {
