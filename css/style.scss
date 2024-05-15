@@ -25,24 +25,34 @@ body {
         height: 3.5vw;
     }
 
+    @media only screen and (max-width: 450px) {
+        height: 6vw;
+    }
+
 
     header {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: none;
         justify-content: flex-start;
         gap: 2vw;
         align-items: center;
         position: fixed;
         top: 2vw;
         font-size: 2.5vw;
+        white-space: nowrap;
         z-index: 1;
 
         @media only screen and (min-width: 720px) {
             font-size: 1.5vw;
             top: 1vw;
         }
-        
+
+        @media only screen and (max-width: 450px) {
+            font-size: 3vw;
+            top: 0.7vw;
+            width: 3vw;
+        }
     
         .header-left {
             margin-left: 2vw;
@@ -66,6 +76,10 @@ body {
 
                 @media only screen and (min-width: 720px) {
                     width: 2vw;
+                }
+
+                @media only screen and (max-width: 450px) {
+                    width: 5vw;
                 }
             }
         }
