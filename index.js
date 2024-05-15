@@ -1,5 +1,3 @@
-$('#redshift-btn').on({
-    'click': function(){
-        $('#img1').attr('src','images/red-bird.jpg');
-    }
+$(document).on("click", "#redshift-btn", function(){
+    $('#img1').attr('src','images/art/red-bird.jpg');
 });
