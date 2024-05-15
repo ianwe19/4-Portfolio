@@ -42,6 +42,7 @@ body {
         font-size: 2.5vw;
         white-space: nowrap;
         z-index: 1;
+        font-family: "FreightBig Pro Black";
 
         @media only screen and (min-width: 720px) {
             font-size: 1.5vw;
@@ -101,6 +102,7 @@ section {
         color: #eeeeee;
         font-size: 3.5vw;
         padding: 10vw;
+        font-family: "FreightBig Pro Black";
     }
 
     figure {
@@ -123,7 +125,7 @@ section {
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(1px);
             font-size: 2vw;
-
+            font-family: "FreightBig Pro Light";
         }
     }
 }
