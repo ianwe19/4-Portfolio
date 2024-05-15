@@ -96,6 +96,7 @@ section h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: #eeeeee;
   font-size: 3.5vw;
   padding: 10vw;

@@ -99,6 +99,7 @@ section {
 
     h1 {
         @include flex-center;
+        text-align: center;
         color: #eeeeee;
         font-size: 3.5vw;
         padding: 10vw;
