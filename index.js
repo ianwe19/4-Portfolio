@@ -9,3 +9,6 @@ $(document).on("click", "#redshift-btn", function(){
     $("h1").css('color', 'red');
     $("figcaption").css('color', 'red');
 });
+
+// pixel value for smaller media queries
+// esp for smaller text/utility text
