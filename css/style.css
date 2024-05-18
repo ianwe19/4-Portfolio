@@ -51,17 +51,17 @@ body {
 }
 @media only screen and (max-width: 393px) {
   .header-wrapper header {
+    width: 100%;
     font-size: 3vw;
     top: 0.7vw;
-    width: 3vw;
-    gap: 6vw;
+    align-content: space-between;
   }
 }
 .header-wrapper header .header-left {
   margin-left: 2vw;
 }
 .header-wrapper header .header-center {
-  justify-content: center;
+  margin: auto;
 }
 .header-wrapper header .header-right {
   margin-right: 2vw;

@@ -51,10 +51,10 @@ body {
         }
 
         @media only screen and (max-width: 393px) {
+            width: 100%;
             font-size: 3vw;
             top: 0.7vw;
-            width: 3vw;
-            gap: 6vw;
+            align-content: space-between;
         }
     
         .header-left {
@@ -62,7 +62,7 @@ body {
         }
     
         .header-center {
-            justify-content: center;
+            margin: auto;
         }
     
         .header-right {
